@@ -34,9 +34,8 @@ Url: [GraphQL Playground](http://localhost:3000/graphql)
 Example query:
 
 ```graphql
-# Write your query or mutation here
 query {
-  getCompanyById(id: "uuid-1") {
+  getCompanyById(id: "uuid-2") {
     id
     name
     cost
@@ -48,14 +47,10 @@ query {
       cost
       createdAt
       parentId
-      children {
-        id
-        name
-        cost
-        createdAt
-        parentId
-      }
     }
   }
 }
 ```
+
+Result:
+![result.png](example/images/result.png 'result.png')
